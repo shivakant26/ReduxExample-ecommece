@@ -15,7 +15,7 @@ class Home extends React.Component {
             <div className="container">
                 <div className="center_wr">
                     <p>{this.props.data}</p>
-                    <h1>Home Component</h1>
+                    <h1>Shopping List</h1>
                     <div className="cart-icon">
                         <p>{this.props.cardData.quantity}</p>
                         <span><i className="fa fa-shopping-cart" ></i></span>
@@ -26,8 +26,8 @@ class Home extends React.Component {
                                 <img src="https://rukminim1.flixcart.com/image/416/416/kn22m4w0/mobile/a/q/8/galaxy-f12-sm-f127gzgiins-samsung-original-imagftmjw3xqg4yk.jpeg?q=70" />
                             </div>
                             <div className="content">
-                                <p><strong>Price:</strong>10000</p>
-                                <p><strong>Color:</strong>Black</p>
+                                <p><strong>Price : </strong>10000</p>
+                                <p><strong>Color : </strong>Black</p>
                             </div>
                             <div className="button">
                                 <button onClick={() => { this.props.addToCartHandler({quantity:1, price: 1000 }) }}>addtoCart</button>
